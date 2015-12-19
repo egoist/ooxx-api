@@ -6,7 +6,7 @@
   "scripts": {
     "test": "ava",
     "dev": "nodemon -x \"rollup -c\" --watch src",
-    "start": "node ."
+    "start": "rollup -c && node ."
   },
   "repository": {
     "type": "git",

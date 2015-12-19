@@ -22,7 +22,9 @@ async function ooxx (page) {
       result.images.push($(el).attr('href'));
     });
     fs.writeFileSync(`./api/${currentPage}.json`, JSON.stringify(result, null, 2), 'utf8');
-    ooxx(currentPage - 1);
+    setTimeout(() => {
+      ooxx(currentPage - 1);	
+    }, 1000 * 60);
   } catch (err) {
     console.log(err.stack);
   }

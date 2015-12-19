@@ -1,7 +1,6 @@
 import fetch from 'node-fetch';
 import cheerio from 'cheerio';
 import fs from 'fs';
-import mkdirp from 'mkdirp';
 
 async function ooxx (page) {
   try {

@@ -1,0 +1,35 @@
+{
+  "name": "ooxx-api",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava",
+    "dev": "nodemon -x \"rollup -c\" --watch src",
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/egoist/ooxx-api.git"
+  },
+  "keywords": [
+    "ooxx"
+  ],
+  "author": "EGOIST <0x142857@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/egoist/ooxx-api/issues"
+  },
+  "homepage": "https://github.com/egoist/ooxx-api#readme",
+  "devDependencies": {
+    "ava": "^0.8.0",
+    "nodemon": "^1.8.1",
+    "rollup": "^0.21.2",
+    "rollup-plugin-babel": "^1.0.0"
+  },
+  "dependencies": {
+    "babel-runtime": "^5.8.34",
+    "cheerio": "^0.19.0",
+    "node-fetch": "^1.3.3"
+  }
+}
